@@ -1,0 +1,17 @@
+\xpg@aux {}{russian}
+\contentsline {chapter}{ВВЕДЕНИЕ}{3}{}%
+\contentsline {chapter}{\numberline {1}АНАЛИТИЧЕСКОЕ РЕШЕНИЕ}{10}{}%
+\contentsline {section}{\numberline {1.1}Общая формула аналитического решения}{10}{}%
+\contentsline {section}{\numberline {1.2}{Случай постоянной скорости $(a=const)$}}{11}{}%
+\contentsline {section}{\numberline {1.3}{Случая зависимости от координаты $(a = a(x))$}}{12}{}%
+\contentsline {section}{\numberline {1.4}{Случая зависимости от времени $(a = a(t))$}}{14}{}%
+\contentsline {section}{\numberline {1.5}{Случая нестационарной скорости $(a(x,t) = x-t)$}}{15}{}%
+\contentsline {section}{\numberline {1.6}{Итоги аналитического решения}}{16}{}%
+\contentsline {chapter}{\numberline {2}АППРОКСИМАЦИЯ РАЗНОСТНЫМИ СХЕМАМИ}{18}{}%
+\contentsline {section}{\numberline {2.1}{Аппроксимация явными разностными схемами}}{18}{}%
+\contentsline {section}{\numberline {2.2}{Итоги аппроксимации явными разностными схемами}}{43}{}%
+\contentsline {section}{\numberline {2.3}{Аппроксимация неявными разностными схемами}}{44}{}%
+\contentsline {section}{\numberline {2.4}{Итоги аппроксимации неявными разностными схемами}}{69}{}%
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{71}{}%
+\contentsline {chapter}{\MakeUppercase []{СПИСОК ЛИТЕРАТУРЫ}}{74}{}%
+\contentsline {chapter}{\MakeUppercase []{ПРИЛОЖЕНИЯ}}{76}{}%

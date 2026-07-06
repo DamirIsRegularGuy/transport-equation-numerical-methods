@@ -1,0 +1,641 @@
+\documentclass[12pt]{article}
+%\usepackage[paperwidth=207mm,paperheight=280mm,left=17mm,top=27mm,right=25mm,bottom=13mm]{geometry}
+%\usepackage[absolute]{textpos}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+%\usepackage{dingbat}
+%\usepackage{a4wide}
+%\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amssymb}
+%\usepackage{pifont,tabularx,varioref,url}
+%\usepackage{eepic}
+%\usepackage{epic}
+\usepackage{amsmath}
+%\usepackage{pst-all}
+%\usepackage{pst-poly}
+%\usepackage{multido}
+%\usepackage{calc}
+%\usepackage[xy,curve,matrix,oldcm,debug]{qsymbols}
+%\usepackage{pst-plot}
+%\usepackage[colorlinks]{hyperref}
+%\usepackage{maple2e}
+% \def\emptyline{\vspace{12pt}}
+%\DefineParaStyle{Heading 1} \DefineParaStyle{Maple Output}
+%\DefineCharStyle{2D Input} \DefineCharStyle{2D Math}
+%\DefineCharStyle{2D Output}
+\def\n{\nabla}
+\def\ep{\varepsilon}
+\def\dsum#1#2{\displaystyle\sum\limits_{#1}^{#2}\,}
+\def\dint#1#2{\displaystyle\int\limits_{#1}^{#2}\,}
+\def\dfrac#1#2{\displaystyle{#1 \over #2}}
+\def\d{\partial}
+\def\div{\mbox{div}\,}
+
+%\pagestyle{empty}
+\begin{document}
+	
+	\noindent
+	УДК 519.6
+	
+	\begin{center}
+		\large{\bf ОБ ОДНОЙ НЕЯВНОЙ РАЗНОСТНОЙ СХЕМЕ ДЛЯ УРАВНЕНИЙ БАРОТРОПНОГО ГАЗА}
+		\vspace{6pt}
+		
+		\large{\textbf{Г.М. Кобельков}}{\footnotemark[1]}, \large{\textbf{А.Г. Соколов}}{\footnotemark[2]}
+		\footnotetext[1]{МГУ им.~М.В.Ломоносова, механико-математический факультет, ИВМ РАН, kobelkov@dodo.inm.ras.ru}
+		\footnotetext[2]{МГУ им. М.В. Ломоносова, механико-математический факультет, shurunya@mtu-net.ru}
+		
+	\end{center}
+	
+	
+	%\begin{center}
+	%\begin{minipage}[c]{0.94\textwidth}
+	Для системы уравнений, описывающей течение идеального (вязкого) баротропного газа, предложена разностная схема, обеспечивающая положительность плотности. Доказано существование решения получающейся системы нелинейных уравнений при любых шагах сетки по времени и пространству. Предложен итерационный процесс для решения полученной системы на временном шаге.
+	%\end{minipage}
+	%\end{center}
+	%\noindent\rule{\linewidth}{0.1pt}
+	\vspace{6pt}
+	
+	
+	\centerline{\bf 1.~Введение}
+	
+	\smallskip
+	Построению разностных схем для уравнений газовой динамики и использованию этих схем для численного моделирования течений сжимаемого идеального (вязкого) газа посвящено огромное количество публикаций (см., например, \cite{khol, fryaz} и цитированную литературу). При этом какие-либо теоретические исследования практически отсутствуют. Так, например, естественный вопрос -- а обеспечивает ли разностная схема положительность плотности (что следует из физики), остается открытым. Исключение составляет монография \cite{akm}, где для уравнений вязкого сжимаемого газа в лагранжевых переменных в одномерном случае доказана неотрицательность плотности, и основанные на этом работы по построению разностных схем (см., например, \cite{zl} и последующие публикации), где аналогичный результат доказан для предложенной там разностной схемы.
+	
+	В настоящей работе предложена неявная разностная схема, аппроксимирующая систему уравнений динамики баротропного газа, которая обеспечивает положительность плотности и сохранение баланса массы. Кроме этого, доказано существование решения разностной задачи при любых соотношениях шагов сетки по времени и пространству, а также выполнение энергетического неравенства. Предложен итерационный процесс для решения системы нелинейных уравнений, возникающих на временном шаге.
+	% % % % % % % % % % % % % % % % % % % % % % % %
+	
+	\bigskip
+	\centerline{\bf 2.~Постановка задачи и априорные оценки}
+	
+	\smallskip
+	Система уравнений, описывающая течений идеального баротропного сжимаемого газа имеет вид
+	(см., например, \cite{kul})
+	$$
+	\begin{array}{l}
+	\dfrac{\partial\rho}{\partial t}+\dfrac{\d (\rho u)}{\d x}=0,\\\\
+	\dfrac{\partial(\rho u)}{\partial t}+\dfrac{(\rho u^2)}{\d x}+\dfrac{\d p}{\d x}=0,
+	p=a\rho^\gamma,\;\gamma=\textrm{const}>1.
+	\end{array}
+	\eqno{(1)}
+	$$
+	Для простоты в дальнейшем полагаем $a=1$.
+	Уравнения (1) рассматриваются в цилиндре $Q_T=[0,1]\times[0,T]$ и дополняются краевыми
+	и начальными условиями
+	$$
+	\begin{array}{l}
+	u(0,t)=u(1,t)=0,\quad u(x,0)=u_0(x),\;\rho(x,0)=\rho_0(x)>0.
+	\end{array}
+	\eqno{(2)}
+	$$
+	
+	Приведем вывод энергетического тождества \cite{lions} для задачи (1), (2), который нам понадобится в дальнейшем при исследовании разностной схемы. Умножим первое уравнение (1) (уравнение неразрывности) скалярно  $L_2$  на $-\dfrac{1}{2}u^2$, а второе уравнение (1) -- скалярно на $u$. Складывая результаты, получим:\\
+	$$
+	\begin{array}{l}
+	-\dfrac{1}{2}(\rho_t,u^2)-\dfrac{1}{2}((\rho u)_x,u^2)+((\rho u)_t,u)+((\rho u^2)_x,u)+(p_x,u)=0.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	Преобразуем левую часть следующим образом:
+	$$
+	\begin{array}{l}
+	((\rho u)_t,u)-\dfrac{1}{2}((\rho_t,u^2)=\dfrac{1}{2}[(\rho_t,u^2)+(\rho,(u^2)_t)]
+	=\dfrac{1}{2}\dfrac{d}{dt}(\rho,u^2).
+	\end{array}
+	%\eqno{()}
+	$$
+	Интегрируя последнее соотношение по $t$ от $0$ до $t$, имеем
+	$$
+	\begin{array}{l}
+	\dint{0}{t}\left[((\rho u)_t,u)-\dfrac{1}{2}(\rho_t,u^2)\right]dt\\\\
+	 \qquad=\dfrac{1}{2}\dint{0}{1}\left[\rho(x,t)u^2(x,t)-\rho_0(x)u_0(x)^2\right]dx.
+	\end{array}
+	\eqno{(3)}
+	$$
+	
+	Далее,
+	$$
+	\begin{array}{l}
+	\bigl((\rho u^2)_x,u\bigr)-\dfrac{1}{2}\bigl((\rho u)_x,u^2\bigr)=\dfrac{1}{2}\bigl((\rho u)_x,u^2\bigr)+(\rho u^2,u_x)\\\\
+	\qquad =\dfrac{1}{2}\dint{0}{1}(\rho u^3)_xdx=0.
+	\end{array}
+	\eqno{(4)}
+	$$
+	
+	Наконец,
+	$$
+	\begin{array}{l}
+	(p_x,u)=\dfrac{\gamma}{\gamma-1}\left(\rho u,(\rho^{\gamma-1})_x\right)
+	 =\dfrac{\gamma}{\gamma-1}\left(\rho_t,\rho^{\gamma-1}\right)=\dfrac{1}{\gamma-1}\left((\rho^\gamma)_t ,1\right).
+	\end{array}
+	%\eqno{()}
+	$$
+	Интегрируя последнее соотношение по $t$, получаем
+	$$
+	\begin{array}{l}
+	 \dint{0}{t}(p_x,u)dt=\dfrac{1}{\gamma-1}\left[\dint{0}{1}(p(x,t)-p_0(x))dx\right].
+	\end{array}
+	\eqno{(5)}
+	$$
+	
+	Из соотношений (3)-(5) следует "энергетическое тождество"
+	$$
+	\begin{array}{l}
+	 \dfrac{1}{2}\dint{0}{1}\rho(t)u^2(x,t)dx+\dfrac{1}{\gamma-1}\dint{0}{1}p(x,t))dx\\\\
+	 \qquad=\dfrac{1}{2}\dint{0}{1}\rho_0u_0^2dx+\dfrac{1}{\gamma-1}\dint{0}{1}p_0(x)dx.
+	\end{array}
+	\eqno{(6)}
+	$$
+	
+	\bigskip\noindent{\bf Примечание}.
+	В случае наличия вязких членов в уравнении движения (второе уравнение (1)), равенство (6) становится неравенством.
+	
+	\smallskip
+	Наша цель -- построить разностную схему, аппроксимирующую задачу (1), (2) и удовлетворяющую следующим условиям:\\
+	1. Если в начальный момент времени плотность $\rho$ в узлах сетки положительна, то во все последующие моменты времени это свойство будет выполняться.\\
+	2. Соотношение (6) при условии положительности плотности означает, что нормы $\|\rho(t)\|_{L_1[0,1]},\;\|\rho^{1/2}(t)u(t)\|_{L_2[0,1]}$ равномерно ограничены по времени. Поэтому естественно  потребовать от решения сеточной задачи, чтобы оно также было равномерно ограничено по времени.\\
+	3. Должен выполняться сеточный аналог закона сохранения массы.\\
+	4. Решение разностной схемы должно существовать.
+	
+	\bigskip
+	\centerline{\bf 3.~Аппроксимация уравнения неразрывности}
+	
+	\smallskip
+	Введем на прямой равномерную сетку с шагом\\
+	$h=1/M,\;x_i=ih,i=0,\dots,M$; пусть $\tau=T/N$ -- шаг по времени.
+	Определим сеточные функции $\rho^n_{i},0\!\leqslant\!\! i\leqslant\!\! M\!-\!1$; $u^n_{i},0\leqslant i\leqslant M$, $u^n_{0}=u^n_{M}=0$.
+	Будем считать, что за границами указанных индексов сеточные функции доопределены нулем.
+	Как обычно, будем использовать обозначения
+	$$
+	\begin{array}{l}
+	v_x=(v_{i+1}-v_i)/h,\quad v_{\bar x}=(v_i-v_{i-1})/h,\quad v_t=(v^{n+1}-v^{n})/\tau.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	Аппроксимируем уравнение неразрывности (первое уравнение (1)) в $i$-м узле, используя следующие соображения: \\
+	а) Если $u_i$ и $u_{i+1}$ имеют одинаковые знаки, то используем аппроксимацию "против потока". А именно,
+	положим
+	$$
+	(\rho u)_x\sim \left\{
+	\begin{array}{l}
+	\dfrac{\rho_iu_{i+1}-\rho_{i-1}u_{i}}{h}, \mbox{ если } u_i,u_{i+1}>0, \\
+	\dfrac{\rho_{i+1}u_{i+1}-\rho_{i}u_{i}}{h}, \mbox{ если } u_i,u_{i+1}<0.
+	\end{array}
+	\right.
+	$$
+	Нетрудно видеть, что в этом случае мы аппроксимируем член $(\rho u)_x$ с порядком $O(h)$.\\
+	б) Если $u_i<0,\;u_{i+1}>0$ (разрежение), то положим
+	$$
+	(\rho u)_x=\rho_xu+\rho u_x\sim \dfrac{\rho_{i}(u_{i+1}-u_{i})}{h}.
+	$$
+	Таким образом, аппроксимируется только второе слагаемое, а первое слагаемое полагаем равным нулю.
+	Так как на концах отрезка длины $h$ функция $u$ принимает значения разных знаков, то на гладких решениях
+	величина $\rho_xu$ на этом отрезке имеет порядок $O(h)$, откуда следует, что аппроксимация $(\rho u)_x$
+	также имеет порядок $O(h)$.\\
+	в) Если $u_i>0,\;u_{i+1}<0$ (сжатие), то положим
+	$$
+	(\rho u)_x=\rho_xu+\rho u_x\sim \dfrac{\rho_{i+1}u_{i+1}-\rho_iu_{i}}{h}+\dfrac{(\rho_i-\rho_{i-1})u_i}{h}.
+	$$
+	Первое слагаемое аппроксимирует $(\rho u)_x$, в то время
+	второе -- аппроксимирует $\rho_xu$. Однако, как уже отмечалось выше, на гладких решениях функция
+	скорости в этом случае на отрезке имеет порядок $O(h)$. Таким образом, и в этом случае аппроксимация имеет первый
+	порядок.
+	
+	Подытоживая рассмотренные выше случаи, имеем
+	$$
+	(\rho u)_x\sim A(u)\rho\equiv
+	\left\{
+	\begin{array}{ll}
+	\dfrac{\rho_iu_{i+1}-\rho_{i-1}u_{i}}{h}, &\mbox{если } u_i,u_{i+1}>0,\\
+	\dfrac{\rho_{i+1}u_{i+1}-\rho_{i}u_{i}}{h}, &\mbox{если } u_i,u_{i+1}<0,\\
+	\dfrac{\rho_{i}(u_{i+1}-u_{i})}{h}, &\mbox{если } u_i<0,u_{i+1}>0,\\
+	\dfrac{\rho_{i+1}u_{i+1}-\rho_{i-1}u_{i}}{h}, &\mbox{если } u_i>0,u_{i+1}<0
+	\end{array}
+	\right.
+	\eqno{(7)}
+	$$
+	
+	Рассмотрим двухслойную по времени неявную разностную схему, аппроксимирующую уравнение неразрывности. Будем использовать стандартные обозначения: $\rho^n=\rho,\;\rho^{n+1}=\hat{\rho}$ и
+	$\rho_t=\dfrac{\hat\rho-\rho}{\tau}$, где $\tau$ -- шаг по времени. Аппроксимируем первое уравнение (1) следующим образом
+	$$
+	\rho_t+A(u)\hat\rho=0.
+	\eqno{(8)}
+	$$
+	
+	Запишем (8) в более удобном виде:
+	$$
+	\begin{array}{l}
+	\dfrac{\rho^{n+1}_i-\rho^{n}_i}{\tau}+\\\\
+	\dfrac{-\rho^{n+1}_{i+1}(-u_{i+1}+|u_{i+1}|) +\rho^{n+1}_{i}(u_{i+1}+|u_{i+1}|-u_{i}+|u_{i}|)-\rho^{n+1}_{i-1}(u_{i}+|u_{i}|)}{2h}=0,\\\\
+	0\leqslant i\leqslant N-1,\quad n\geqslant 0.
+	\end{array}
+	\eqno{(9)}
+	$$
+	Напомним, что сеточная функция $\rho^{n+1}_i$ доопределена нулем при $i=-1$, $i=N$.
+	
+	Уравнение (9) неявно по $\hat\rho$. Выпишем матрицу оператора $A$. Имеем (c точностью до множителя $\dfrac{1}{2h}$)
+	
+	%\newpage
+	$$
+	A=
+	\left(\!\!
+	\begin{array}{ccccc}
+	u_{1}\!+\!|u_{1}| & u_{1}\!-\!|u_{1}| & 0 & \ldots & 0 \\
+	-\!u_{1}\!-\!|u_{1}| & u_{2}\!+\!|u_{2}|\!-\!u_{1}\!+\!|u_{1}| & u_{2}\!-\!|u_{2}| & 0 & \ldots \\
+	0 & -u_{2}-|u_{2}| & u_{3}\!+\!|u_{3}|\!-\!u_{2}\!+\!|u_{2}| & u_{3}\!-\!|u_{3}| & 0 \\
+	0 & \ldots & -u_{3}-|u_{3}| & \ddots & 0 \\
+	\cdots&\cdots&\cdots&\ddots& A_{N-2,N-1}\\
+	0 & \ldots & 0 & A_{N-1,N-2} & A_{N-1,N-1}
+	\end{array}
+	\!\!\right)
+	%\eqno{()}
+	$$
+	
+	Матрица $A$ обладает следующими свойствами: \\
+	\hspace*{3em}-- {\it элементы на диагонали неотрицательны}; \\
+	\hspace*{3em}-- {\it элементы вне диагонали неположительны}; \\
+	\hspace*{3em}-- {\it сумма элементов по столбцу равна нулю}.\\
+	
+	Из (8) следует $(I+\tau A(u))\hat\rho=\tau\rho$. Тогда из рассмотренного выше следует, что матрица $I+\tau A(u)$ является $M$-матрицей, поэтому у обратной к ней
+	матрицы все элементы будут положительны. Отсюда следует
+	
+	\bigskip\noindent
+	{\bf Теорема~1}. {\it Пусть $\rho^0_j> 0,\,j=0,\dots,M-1$, тогда при любом $n>0$ имеет место неравенство
+		$\rho^n_j> 0$, т.е. аппроксимация уравнения неразрывности (8) обеспечивает положительность плотности}.
+	
+	\bigskip
+	Из вида матрицы $A$ следует
+	
+	\bigskip\noindent
+	{\bf Теорема~2}. {\it Аппроксимация (8) уравнения неразрывности обеспечивает выполнение закона сохранения массы в сеточном
+		случае. А именно, имеет место равенство	
+		$$
+		\begin{array}{l}
+		\dsum{j=0}{M-1}h\rho^n_j=\dsum{j=0}{M-1}h\rho^0_j, \;n=1,\dots,N.
+		\end{array}
+		\eqno{(10)}
+		$$
+	}
+	
+	\noindent
+	{\it Доказательство}. Так как сумма элементов по столбцу матрицы $A$ равна нулю, то отсюда следует утверждение теоремы.
+	
+	
+	
+	\newpage
+	\centerline{\bf 4.~Аппроксимация уравнения движения}
+	
+	\smallskip
+	Введем другую форму записи аппроксимации уравнения неразрывности. А именно, положим
+	$$
+	\begin{array}{l}
+	\{\rho\}=[\rho_i]-\dfrac h 2\rho_{\bar{x}}\mathrm{sign}( u),
+	\quad\mbox{где }\,[\rho_i]=\dfrac{\rho_i+\rho_{i-1}}2;
+	\end{array}
+	$$
+	заметим, что операторы $\{.\},[\,.\,]$ зависят от сеточной функции $u$.
+	Тогда по аналогии с (8) полностью неявная разностная схема для уравнения неразрывности примет вид
+	$$
+	\rho_t+(\{\hat\rho\}\hat u)_x=0, \;x=ih,\,i=0,\dots,M-1.
+	\eqno{(11)}
+	$$
+	
+	При аппроксимации уравнения движения будем использовать тот же принцип направленных разностей против потока, что и при аппроксимации уравнения неразрывности. Аппроксимируем исходную задачу полностью неявной разностной схемой:
+	$$
+	%\begin{array}{l}
+	(\rho u)_t+(\{\hat\rho \hat u\}\hat u)_x+\dfrac\gamma{\gamma-1}\{\hat\rho\}(\hat\rho^{\gamma-1})_{\bar{x}}=0,\; x=ih,\,i=1,\dots, M-1.
+	%\end{array}
+	\eqno{(12)}
+	$$
+	
+	Неизвестными в уравнениях (11), (12) являются функции $\hat{\rho}$ и $\hat u$, т.е. система уравнений (11), (12)
+	содержит $2 M-1$ уравнений и такое же количество неизвестных. Докажем равномерную ограниченность норм
+	$\|(\rho^n)^{1/2}u^n\|$. Введем скалярное произведение (напомним, что функции $\rho^n$ и $u^n$ продолжены нулем
+	на всю сеточную область) по формуле
+	$$
+	(u,v)=\dsum{i=0}{ M}hu_iv_i.
+	%\eqno{()}
+	$$
+	
+	По аналогии с дифференциальным случаем умножим (11) скалярно на $\frac{\tau}{2}{\hat u}^2$, а (12) -- скалярно
+	на $\tau\hat u$. Вычитая из второго соотношения первое, получим
+	$$
+	\begin{array}{l}
+	\tau((\rho u)_t,\hat u) - \dfrac{\tau}{2}(\rho_t,{\hat u}^2)+\tau((\{\hat\rho \hat u\}\hat u)_x,\hat u)
+	-\dfrac{\tau}{2}((\{\hat\rho\}\hat u)_x,{\hat u}^2)\\\\
+	 \qquad+\dfrac{\tau\gamma}{\gamma-1}(\{\hat\rho\}(\hat\rho^{\gamma-1})_{\bar{x}},\hat u)=0.
+	\end{array}
+	\eqno{(13)}
+	$$
+	Оценим выражения в (13). Имеем
+	$$
+	\begin{array}{l}
+	\tau((\rho u)_t,\hat u) - \dfrac{\tau}{2}(\rho_t,{\hat u}^2)=(\hat\rho,{\hat u}^2)-(\rho,u{\hat u})
+	-\dfrac{1}{2}(\hat\rho,{\hat u}^2)+\dfrac{1}{2}(\rho,{\hat u}^2)\\\\
+	\qquad=\dfrac{1}{2}\left[(\hat\rho,{\hat u}^2)-(\rho,{ u}^2)\right]+\dfrac{1}{2}(\rho,(\hat u-u)^2).
+	\end{array}
+	\eqno{(14)}
+	$$
+	
+	Далее,
+	$$
+	\begin{array}{l}
+	\dfrac{\tau\gamma}{\gamma-1}(\{\hat\rho\}(\hat\rho^{\gamma-1})_{\bar{x}},\hat u)=
+	\dfrac{\tau\gamma}{\gamma-1}((\hat\rho^{\gamma-1})_{\bar{x}},\{\hat\rho\}\hat u)\\\\
+	\qquad=-\dfrac{\tau\gamma}{\gamma-1}(\hat\rho^{\gamma-1},(\{\hat\rho\}\hat u)_x)=
+	\dfrac{\tau\gamma}{\gamma-1}(\hat\rho^{\gamma-1},\rho_t)\\\\
+	 \qquad=\dfrac\gamma{\gamma-1}(\hat\rho^\gamma,1)-\dfrac\gamma{\gamma-1}(\hat\rho^{\gamma-1},\rho).
+	\end{array}
+	\eqno{(15)}
+	$$
+	Оценим последний член в (15) с помощью неравенства Юнга с показателями $\dfrac{\gamma}{\gamma-1}$ и $\gamma$:
+	$$
+	\begin{array}{l}
+	\hat\rho^{\gamma-1}\cdot\rho\le \dfrac{\gamma-1}{\gamma}\hat\rho^{\gamma}+\dfrac{1}{\gamma}\rho^{\gamma}.
+	\end{array}
+	%\eqno{()}
+	$$
+	Тогда из этого соотношения и (15) следует неравенство
+	$$
+	\begin{array}{l}
+	\dfrac{\tau\gamma}{\gamma-1}(\{\hat\rho\}(\hat\rho^{\gamma-1})_{\bar{x}},\hat u)\ge
+	 \dfrac{1}{\gamma-1}[(\hat\rho^\gamma,1)-(\rho^\gamma,1)]=\dfrac{1}{\gamma-1}[(\hat p,1)-(p,1)].
+	\end{array}
+	\eqno{(16)}
+	$$
+	
+	Наконец, оценим последние два слагаемых в (13). А именно, докажем что
+	$J=\left((\{\hat\rho \hat u\}\hat u)_x,\hat u\right)-\dfrac{1}{2}\left((\{\hat\rho\}\hat u)_x,{\hat u}^2\right)\ge 0$.
+	При оценке, для упрощения формул вместо $\hat\rho$ и $\hat u$ будем писать $\rho$ и $ u$.
+	Воспользуемся формулой (9) для представления аппроксимаций $(\{\rho\}u)_x$ и $(\{\rho u\}u)_x$. Имеем
+	
+	%----------------------------------------
+	$$
+	\begin{array}{l}
+	 -0.5((\{\rho\}u)_x,u^2)=\dfrac{1}{4h}\dsum{}{}\Bigl[\rho_{i+1}(|u_{i+1}|-u_{i+1})u_i^2      \\\\
+	\quad -\rho_i(|u_{i+1}|+u_{i+1})u_i^2+\rho_i(-|u_{i}|+u_{i})u_i^2+\rho_{i-1}(u_i+|u_i|)u_i^2 \Bigr],
+	\end{array}
+	\eqno{(17)}
+	$$
+	
+	$$
+	\begin{array}{l}
+	((\{\rho u\}u)_x,u)=\dfrac{1}{2h}\dsum{}{}\Bigl[\rho_{i+1}(u_{i+1}-|u_{i+1}|)u_{i+1}u_{i}    \\\\
+	\quad + \rho_{i}(u_{i+1}+|u_{i+1}|+|u_{i}|-u_i)u_i^2-\rho_{i-1}(u_{i-1}u_i+u_{i-1}|u_i|)u_{i} \Bigr].
+	\end{array}
+	\eqno{(18)}
+	$$
+	
+	Изменяя индексы в суммировании в формулах (17) и (18), получаем
+	$$
+	\begin{array}{l}
+	J=\bigl((\{\rho u\}u)_x,u\bigr)-0.5\bigl((\{\rho\}u)_x,u^2\bigr)= \dsum{}{}I(i)\rho_i,
+	\end{array}
+	\eqno{(19)}
+	$$
+	где $I=\dfrac{1}{4h}(I_1+I_2+I_3+I_4+J_1+J_2)$ и
+	$$
+	\begin{array}{l}
+	I_1=(|u_{i+1}|+u_{i+1})u_i^2,\quad I_2=(|u_{i}|-u_i)u_i^2, \quad I_3=(|u_{i}|-u_{i})u_{i-1}^2,\\\\
+	I_4=(|u_{i+1}|+u_{i+1})u_{i+1}^2, \\\\
+	J_1=2(u_i-|u_i|)u_iu_{i-1}), \quad  J_2=-2(|u_{i+1}|+u_{i+1})u_iu_{i+1}).
+	\end{array}
+	\eqno{(20)}
+	$$
+	Покажем, что $I\ge 0$. Прежде всего заметим, что $I_k\ge 0,\; k=1,\cdots,4$. Рассмотрим восемь различных случаем. Имеем:
+	
+	\smallskip
+	{\bf 1}) Пусть $u_i,\,u_{i+1},\,u_{i-1}\ge 0$. В этом случае $J_1=0,\;J_2=-4u_{i+1}^2u_i$, $I_1=2u_{i+1}u_i^2,\;I_4=2u_{i+1}^3$.
+	Тогда
+	$$
+	\begin{array}{l}
+	I\ge J_2+I_1+I_4=2u_{i+1}(u_{i+1}-u_i)^2\ge 0.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	{\bf 2}) Пусть $u_i,\,u_{i+1},\,u_{i-1}\le 0$. В этом случае $J_2=0,\;J_1=4u_{i-1}u_i^2,$\linebreak
+	$I_2=2u_{i}^2|u_i|,\;I_3=2|u_i|u_{i-1}^2$.
+	Тогда
+	$$
+	\begin{array}{l}
+	I\ge J_1+I_2+I_3=2|u_{i}|(u_{i-1}+|u_i|)^2\ge 0.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	{\bf 3}) Пусть $u_i\ge 0,\,u_{i+1},\,u_{i-1}\le 0$. В этом случае $J_2=0,\;J_1=0$, т.е. $I\ge 0$.
+	
+	\smallskip
+	{\bf 4}) Пусть $u_i\le 0,\,u_{i+1},\,u_{i-1}\ge 0$. В этом случае $J_2\ge 0,\;J_1=4u_{i-1}u_i^2$, $I_2=2u_{i}^2|u_i|,\;I_3=2|u_i|u_{i-1}^2$.
+	Тогда
+	$$
+	\begin{array}{l}
+	I\ge J_1+I_2+I_3=2|u_{i}|(u_{i-1}+|u_i|)^2\ge 0.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	{\bf 5}) Пусть $u_{i-1}\le 0,\,u_{i+1},\,u_{i}\ge 0$. В этом случае $J_1=0,\;J_2=4u_{i+1}^2u_i$, $I_1=2u_{i+1}u_i^2,\;I_4=2u_{i+1}^3$.
+	Тогда
+	$$
+	\begin{array}{l}
+	I\ge J_2+I_1+I_4=2|u_{i+1}|(u_{i+1}+u_i)^2\ge 0.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	{\bf 6}) Пусть $u_{i-1}\ge 0,\,u_{i},\,u_{i+1}\le 0$. В этом случае $J_2=0,\;J_1=4u_{i-1}u_i^2\ge 0$, т.е. $I\ge 0$.
+	
+	\smallskip
+	{\bf 7}) Пусть $u_{i+1}\le 0,\,u_{i},\,u_{i-1}\ge 0$. В этом случае $J_2=0,\;J_1=0$, т.е. $I\ge 0$.
+	
+	\smallskip
+	{\bf 8}) Пусть $u_{i+1}\ge 0,\,u_{i},\,u_{i-1}\le 0$. В этом случае $J_2=-4u_iu_{i-1}^2\ge 0,$ $J_1=4u_{i-1}u_i^2,\;I_2=2u_{i}^2|u_i|,\;I_3=2|u_i|u_{i-1}^2$.
+	Тогда
+	$$
+	\begin{array}{l}
+	I\ge J_1+I_2+I_3=2|u_{i}|(u_{i-1}+|u_i|)^2\ge 0.
+	\end{array}
+	%\eqno{()}
+	$$
+	
+	Итак, мы установили, что $I(i)\ge 0$. Тогда из (19) и того факта, что $\rho> 0$, следует неравенство
+	$J\ge 0$.
+	
+	Из соотношения (13) и неравенств $J\ge 0$, (14), (16), таким образом, следует
+	
+	\bigskip\noindent
+	{\bf Теорема 3}. {\it Для разностной схемы справедливо равенство
+		$$
+		\begin{array}{l}
+		 \dfrac{1}{2}\bigl(\rho^n,(u^n)^2\bigr)+\dfrac{1}{2}\dsum{i=0}{n-1}\bigl(\rho^{i+1},(u^{i+1}-u^i)^2\bigr)
+		+\dfrac{1}{\gamma-1}(p^n,1)\\\\
+		\qquad \le \dfrac{1}{2}\bigl(\rho^0,(u^0)^2\bigr)+\dfrac{1}{\gamma-1}(p^0,1).
+		\end{array}
+		\eqno{(20)}
+		$$
+	}
+	
+	\bigskip
+	\centerline{\bf 5. Существование решения разностной схемы}
+	
+	\smallskip
+	Докажем, что решение (11), (12) при любых шагах сетки $\tau$ и $h$ всегда существует. Действительно, введем новую переменную
+	$v=\rho u$. Тогда уравнение (12) примет вид
+	$$
+	\begin{array}{l}
+	v_t+(\{\hat v\}\hat v/\hat\rho)_x+\dfrac{\gamma}{\gamma-1}\{\hat{\rho}\}\bigl(\hat{\rho}^{\gamma-1}\bigr)_{\bar x}=0.
+	\end{array}
+	\eqno{(21)}
+	$$
+	Для доказательства разрешимости задачи (11), (21) воспользуемся теоремой Лере-Шаудера. Запишем (11), (21) в виде
+	$$
+	\begin{array}{l}
+	\hat\rho=\rho-\tau(\{\hat\rho\}\hat u)_x\equiv F_1(\hat{\rho},\hat v), \\\\
+	\hat v=v-\tau\bigl[(\{\hat v\}\hat v/\hat\rho)_x+\dfrac{\gamma}{\gamma-1}\{\hat{\rho}\}\bigl(\hat{\rho}^{\gamma-1}\bigr)_{\bar x}\bigr]\equiv F_2(\hat{\rho},\hat v).
+	\end{array}
+	\eqno{(22)}
+	$$
+	Покажем, что все возможные решения задачи
+	$$
+	\begin{array}{l}
+	\hat\rho=\lambda F_1(\hat\rho,\hat v),\\\\
+	\hat v=\lambda F_2(\hat\rho,\hat v),\quad \lambda\in (0,1),
+	\end{array}
+	\eqno{(23)}
+	$$
+	лежат в некотором шаре. Действительно, элементарными преобразованиями (23) сводится к виду
+	$$
+	\begin{array}{l}
+	\dfrac{1-\lambda}{\tau\lambda}\hat{\rho}+\rho_t+(\{\hat u\}\hat \rho)_x=0,\\\\
+	\dfrac{1-\lambda}{\tau\lambda}\hat{\rho}\hat u+(\rho u)_t+(\{\hat \rho\hat u\}\hat u)_x
+	+\dfrac{\gamma}{\gamma-1}\hat{\rho}\bigl(\hat{\rho}^{\gamma-1}\bigr)_{\bar x}=0
+	\end{array}
+	\eqno{(24)}
+	$$
+	Умножая первое уравнение (24) скалярно на $-0.5\hat u^2$, а второе -- на $\hat u$, после сложения получим
+	$$
+	\begin{array}{l}
+	\dfrac{1-\lambda}{2\tau\lambda}(\hat{\rho},\hat u^2)
+	+\dfrac{1}{2}\bigl(\hat\rho,(\hat u)^2\bigr)+\dfrac{1}{\gamma-1}(\hat\rho^\gamma ,1)\\\\
+	\qquad \le \dfrac{1}{2}\bigl(\rho,u^2\bigr)+\dfrac{1}{\gamma-1}(\rho^\gamma,1)
+	\le \dfrac{1}{2}\bigl(\rho^0,(u^0)^2\bigr)+\dfrac{1}{\gamma-1}(p^0,1).
+	\end{array}
+	\eqno{(25)}
+	$$
+	
+	Кроме этого, в силу (10) и теоремы 1 имеем
+	$$
+	\hat\rho>0,\qquad\dsum{i=0}{ M-1}h\hat{\rho}_i=\dsum{i=0}{ M-1}h{\rho}^0_i.
+	$$
+	Далее,
+	$$
+	\begin{array}{l}
+	\max\limits_i\hat\rho_i\le\dsum{i=0}{ M-1}\hat{\rho}_i.
+	\end{array}
+	%\eqno{()}
+	$$
+	Тогда используя (25) и приведенные выше соотношения, получаем
+	$$
+	\begin{array}{l}
+	\dfrac{1}{\gamma-1}\|\hat\rho\|_{L_{\gamma,h}}^\gamma+\dfrac{1}{2}\|\hat v\|^2=
+	 \dfrac{1}{\gamma-1}\|\hat\rho\|_{L_{\gamma,h}}^\gamma+\dfrac{1}{2}\|\hat\rho\hat u\|^2\\\\
+	\qquad\le \dfrac{1}{\gamma-1}\|\hat\rho\|_{L_{\gamma,h}}^\gamma+\dfrac{1}{2h}\|\rho^0\|_{L_{1,h}}\bigl(\hat{\rho},\hat u^2\bigr)\\\\
+	\qquad\le \dfrac{1}{h}\max\{1,\|\rho^0\|_{L_{1,h}}\}\left[\dfrac{1}{\gamma-1}\|\hat\rho\|_{L_{\gamma,h}}^\gamma+\dfrac{1}{2}\bigl(\hat{\rho},\hat u^2\bigr)\right]\\\\
+	\qquad \le \dfrac{1}{h}\max\{1,\|\rho^0\|_{L_{1,h}}\}\left[\dfrac{1}{2}\bigl(\rho^0,(u^0)^2\bigr)+\dfrac{1}{\gamma-1}(p^0,1)
+	\right].
+	\end{array}
+	\eqno{(26)}
+	$$
+	
+	Неравенство (26) означает равномерную по $\lambda\in(0,1)$ ограниченность норм решений операторного уравнения (23). Тогда из
+	теоремы Лере-Шаудера \cite{lad} следует
+	
+	\bigskip\noindent
+	{\bf Теорема 4}. {\it Решение задачи (11), (21) при любых $\tau$ и $h$ существует}.
+	
+	\bigskip
+	Отметим, что по доказанному ранее, $\hat{\rho}>0$, поэтому $\hat u=\hat{v}/\hat{\rho}$ также существует.
+	
+	Для нахождения решения $\rho^{n+1},\,u^{n+1}$ задачи (11), (12) может быть использован следующий итерационный процесс
+	$$
+	\begin{array}{l}
+	\dfrac{\rho^{k+1}-\rho^n}{\tau}+(\{\rho^{k+1}\}u^k)_x=0,\\\\
+	 \dfrac{\rho^{k+1}u^{k+1}-\rho^nu^n}{\tau}+(\{\rho^{k+1}u^{k+1}\}u^{k+1})_x\\\\
+	\qquad+\dfrac \gamma{\gamma-1}\{\rho^{k+1}\}((\rho^{k+1})^{\gamma-1})_{\bar{x}}=0, \quad u^{k}|_{k=0}=u^n;
+	\end{array}
+	\eqno{(27)}
+	$$
+	здесь $k=0,1,...$ -- номер итерации. Для решения первого уравнения (27) в одномерном случае можно использовать метод прогонки, а в многомерном -- метод простой итерации. Для решения второго уравнения (27) используем метод простой итерации.
+	Можно доказать, что при достаточно малом шаге по времени эти процессы сходятся.
+	
+	\bigskip
+	Работа выполнена при частичной поддержке РФФИ (проект 17-01-838) и Программы ОМН РАН "Современные проблемы теоретической математики" ("Оптимальные методы  решения задач математической физики").
+	
+	
+	
+	
+	
+	\vspace{10pt}
+	\begin{thebibliography}{99}
+		\bibitem{khol} Белоцерковский~О.М., Васильев~М.О.,
+		Ведерников~А.Б., Дымников~В.П., Замышляев~Б.В.,
+		Борис Юрьевич Крысанов~Б.Ю., Николай Вадимович Ковшов~Н.В., Вячеслав Евгеньевич
+		Куницын~В.Е., Евгений Александрович Молоков~Е.А., Репин~А.Ю., Сидоренкова~Н.А., Ступицкий~Е.Л., Холодов~Я.А., Холодов~А.С.
+		О численном моделировании некоторых задач взаимодействия литосферы,
+		гидросферы и атмосферы Земли. В кн.: Фрагменты истории и достижения ИАП РАН. 1986-2011.
+		ИАП РАН, ООО ИЦ "Полет Джонатана", 2011, с.~14 - 71.
+		\bibitem{fryaz}	Попов И.В., Фрязинов И.В. Метод адаптивной искусственной вязкости численного решения уравнений газовой динамики. URSS, 2015.
+		\bibitem{akm}Антонцев~С.Н., Кажихов А.В., Монахов В.Н. Краевые задачи механики неоднородных жидкостей. Новосибирск, Наука, 1983.	
+		\bibitem{zl} Амосов~А.А., А. А. Злотник~А.А., Разностные схемы второго
+		порядка точности для уравнений одномерного движения
+		вязкого газа. Ж. вычисл. матем. и матем. физ., 1987,
+		т.~27, №7, с.1032–1049
+		\bibitem{kul}{Куликовский А.Г., Погорелов Н.В., Семенов А.Ю.}
+		Математические вопросы численного решения гиперболических систем уравнений. М.: Наука, 2001.
+		\bibitem{lions} Lions P.-L.
+		Mathematical Topics in Fluid Mechanics. V.2. Compressible Models. Oxford Lecture Series in Mathematics
+		and its Applications • 10. Oxford: Clarendon Press, 1998.
+		\bibitem{lad}{Ладыженская О.А.} Математические вопросы динамики вязкой несжимаемой жидкости. М.: Наука, 1970.
+		
+		
+		%	\bibitem{lad}Ladyzhenskaya~O.A. {\it The Mathematical Theory of Viscous
+		%		Incompressible Flow}. New~York: Gordon and Breach, 1969.
+	\end{thebibliography}
+	
+	\newpage
+	
+	{\bf Название на английском языке}: Implicit finite difference scheme for barotropic gas equations\\
+	
+	{\bf Abstract}:\\
+	An implicit finite difference scheme approximated barotropic gas equations is proposed. This scheme ensures positivity
+	of density compared to previous methods. Existence of a solution to this scheme is proved for any time and space
+	mesh-steps, an iterative method
+	for solving the system of nonlinear equations on each time step is proposed.
+	
+\end{document}
+
+
+
+
+
+\vspace{12pt}
+\begin{center}
+	\begin{minipage}[c]{0.94\textwidth}
+		The implicit approximation of the continuity equation by conservative difference scheme with non-negative solution is considered. For barotropic gas for nonlinear difference scheme a grid analogue of energy inequality is obtained. The scheme allows the calculation in the case of density is equal to zero. This scheme applied to the calculations of large-scale flows of the Black and Caspian seas on shallow water model.
+	\end{minipage}
+\end{center}
+
+
+
+
+
+
+
+
+\end{document} 

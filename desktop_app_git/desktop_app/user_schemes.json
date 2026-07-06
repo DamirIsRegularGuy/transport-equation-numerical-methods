@@ -1,0 +1,53 @@
+{
+    "new_javn": [
+        "u - a * dt / dx * (u - u_left)",
+        "Явная"
+    ],
+    "ne_javn": [
+        [
+            "gen",
+            "u"
+        ],
+        "Неявная"
+    ],
+    "явная_центаральная_схема": [
+        "u - 0.5 * a * dt / dx * (u_right - u_left)",
+        "Явная"
+    ],
+    "экзатическая явная схема": [
+        "u - (a * dt / dx) * (u - u_left) + 0.01 * np.sin(u)",
+        "Явная"
+    ],
+    "Matrix_Crank_Nicolson": [
+        {
+            "diagonals": {
+                "0": "1",
+                "-1": "-a * dt / (2 * dx)",
+                "1": "a * dt / (2 * dx)"
+            },
+            "rhs": "u - a * dt / (2 * dx) * (u_right - u_left)"
+        },
+        "Неявная (Матричная)"
+    ],
+    "CN_Central": [
+        {
+            "diagonals": {
+                "0": "1",
+                "-1": "-a * dt / (4 * dx)",
+                "1": "a * dt / (4 * dx)"
+            },
+            "rhs": "u - a * dt / (4 * dx) * (u_right - u_left)"
+        },
+        "Неявная (Матричная)"
+    ],
+    "CN_Upwind_315": [
+        {
+            "diagonals": {
+                "0": "1 + a * dt / (2 * dx)",
+                "-1": "-a * dt / (2 * dx)"
+            },
+            "rhs": "u - a * dt / (2 * dx) * (u - u_left)"
+        },
+        "Неявная (Матричная)"
+    ]
+}

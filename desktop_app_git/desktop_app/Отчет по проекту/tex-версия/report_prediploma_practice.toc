@@ -1,0 +1,53 @@
+\xpg@aux {}{russian}
+\contentsline {chapter}{Введение}{5}{}%
+\contentsline {chapter}{\numberline {1}Цели, задачи и содержание преддипломной практики}{8}{}%
+\contentsline {chapter}{\numberline {2}Теоретические основы решения уравнения переноса}{11}{}%
+\contentsline {section}{\numberline {2.1}Математическая постановка задачи}{11}{}%
+\contentsline {section}{\numberline {2.2}Метод характеристик}{12}{}%
+\contentsline {section}{\numberline {2.3}Типовые случаи коэффициента переноса}{13}{}%
+\contentsline {section}{\numberline {2.4}Разностные схемы и дискретизация}{13}{}%
+\contentsline {section}{\numberline {2.5}Неявные методы и решение систем линейных уравнений}{15}{}%
+\contentsline {section}{\numberline {2.6}Устойчивость, число Куранта и нормы ошибок}{16}{}%
+\contentsline {chapter}{\numberline {3}Требования к программной системе}{18}{}%
+\contentsline {section}{\numberline {3.1}Функциональные требования}{18}{}%
+\contentsline {section}{\numberline {3.2}Нефункциональные требования}{19}{}%
+\contentsline {section}{\numberline {3.3}Сценарии использования}{21}{}%
+\contentsline {chapter}{\numberline {4}Проектирование архитектуры приложения}{22}{}%
+\contentsline {section}{\numberline {4.1}Выбор технологического стека}{22}{}%
+\contentsline {section}{\numberline {4.2}Логическая структура системы}{22}{}%
+\contentsline {section}{\numberline {4.3}Организация набора схем}{24}{}%
+\contentsline {section}{\numberline {4.4}Поддержка пользовательских схем}{25}{}%
+\contentsline {section}{\numberline {4.5}Интерфейс пользователя}{27}{}%
+\contentsline {chapter}{\numberline {5}Программная реализация системы}{28}{}%
+\contentsline {section}{\numberline {5.1}Построение вычислительного контекста}{28}{}%
+\contentsline {section}{\numberline {5.2}Реализация явных схем}{28}{}%
+\contentsline {section}{\numberline {5.3}Реализация неявных схем}{30}{}%
+\contentsline {section}{\numberline {5.4}Расчёт ошибок и анализ сходимости}{31}{}%
+\contentsline {section}{\numberline {5.5}Визуализация и экспорт}{33}{}%
+\contentsline {chapter}{\numberline {6}Результаты вычислительных экспериментов}{35}{}%
+\contentsline {section}{\numberline {6.1}Организация экспериментов}{35}{}%
+\contentsline {section}{\numberline {6.2}Сравнение явных схем}{35}{}%
+\contentsline {section}{\numberline {6.3}Роль ограничителей и схем TVD/MUSCL}{37}{}%
+\contentsline {section}{\numberline {6.4}Сравнение неявных схем}{37}{}%
+\contentsline {section}{\numberline {6.5}Пользовательские схемы как инструмент исследования}{38}{}%
+\contentsline {section}{\numberline {6.6}Анализ ошибок и таблицы норм}{38}{}%
+\contentsline {section}{\numberline {6.7}Анализ сходимости}{39}{}%
+\contentsline {section}{\numberline {6.8}Интерпретация результатов с точки зрения учебного процесса}{39}{}%
+\contentsline {chapter}{\numberline {7}Тестирование, отладка и оценка качества}{41}{}%
+\contentsline {section}{\numberline {7.1}Стратегия тестирования}{41}{}%
+\contentsline {section}{\numberline {7.2}Тестовые сценарии}{41}{}%
+\contentsline {section}{\numberline {7.3}Анализ производительности}{43}{}%
+\contentsline {section}{\numberline {7.4}Ограничения текущей версии}{43}{}%
+\contentsline {chapter}{\numberline {8}Практические результаты и сформированные компетенции}{44}{}%
+\contentsline {chapter}{\numberline {9}Перспективы развития проекта}{46}{}%
+\contentsline {chapter}{Заключение}{47}{}%
+\contentsline {chapter}{Список использованных источников}{48}{}%
+\contentsline {chapter}{\numberline {A}Руководство пользователя}{50}{}%
+\contentsline {section}{\numberline {A.1}Запуск программы}{50}{}%
+\contentsline {section}{\numberline {A.2}Базовый сценарий работы}{50}{}%
+\contentsline {section}{\numberline {A.3}Добавление пользовательской схемы}{51}{}%
+\contentsline {section}{\numberline {A.4}Интерпретация результатов}{51}{}%
+\contentsline {chapter}{\numberline {B}Каталог реализованных схем}{53}{}%
+\contentsline {section}{\numberline {B.1}Встроенные явные схемы}{53}{}%
+\contentsline {section}{\numberline {B.2}Встроенные неявные схемы}{54}{}%
+\contentsline {chapter}{\numberline {C}Фрагменты конфигурации и кода}{56}{}%

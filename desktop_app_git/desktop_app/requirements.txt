@@ -1,0 +1,8 @@
+numpy
+sympy
+scipy
+plotly
+PyQt5
+matplotlib
+imageio
+imageio-ffmpeg

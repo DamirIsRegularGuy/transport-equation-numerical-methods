@@ -1,0 +1,1863 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.24)  22 MAY 2026 15:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extreport.cls
+Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
+Package: exscale 2025/06/05 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen148
+)
+\c@part=\count271
+\c@chapter=\count272
+\c@section=\count273
+\c@subsection=\count274
+\c@subsubsection=\count275
+\c@paragraph=\count276
+\c@subparagraph=\count277
+\c@figure=\count278
+\c@table=\count279
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen149
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\polyglossia
+.sty
+Package: polyglossia 2025/12/01 v2.9 Modern multilingual typesetting with XeLaT
+eX and LuaLaTeX
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-12-29 L3 programming layer (loader) 
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count281
+\g__pdfannot_backend_int=\count282
+\g__pdfannot_backend_link_int=\count283
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count284
+\l__fontspec_language_int=\count285
+\l__fontspec_strnum_int=\count286
+\l__fontspec_tmp_int=\count287
+\l__fontspec_tmpa_int=\count288
+\l__fontspec_tmpb_int=\count289
+\l__fontspec_tmpc_int=\count290
+\l__fontspec_em_int=\count291
+\l__fontspec_emdef_int=\count292
+\l__fontspec_strong_int=\count293
+\l__fontspec_strongdef_int=\count294
+\l__fontspec_tmpa_dim=\dimen150
+\l__fontspec_tmpb_dim=\dimen151
+\l__fontspec_tmpc_dim=\dimen152
+ (C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))
+) (C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\l_xpg_alias_keyvals_int=\count295
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-latex
+.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-russi
+an.ldf
+File: gloss-russian.ldf polyglossia: module for Russian
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\xpg-cyrilli
+cnumbers.sty
+Package: xpg-cyrillicnumbers 2019/11/15 v0.2 Formatting of Cyrillic alphabetic 
+numbers
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\babelsh.def
+File: babelsh.def 2022/06/21 Babel common definitions for shorthands
+ Taken verbatim from babel files (2022/06/06 v3.76)
+)
+Package babel Info: Making " an active character on input line 120.
+)
+
+Package polyglossia Info: Default language is russian
+
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-engli
+sh.ldf
+File: gloss-english.ldf polyglossia: module for English
+)
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Ligatures=TeX,Ligatures=TeX,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=cyrl;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=cyrl;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=cyrl;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=cyrl;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=cyrl;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(0)' created for font 'Arial' with
+(fontspec)             options [Ligatures=TeX,Ligatures=TeX,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Arial/OT:script=cyrl;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Arial/OT:script=cyrl;language=dflt;+smcp;mapping=tex
+-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Arial/B/OT:script=cyrl;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Arial/B/OT:script=cyrl;language=dflt;+smcp;mapping=t
+ex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Arial/I/OT:script=cyrl;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Arial/I/OT:script=cyrl;language=dflt;+smcp;mapping=t
+ex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Arial/BI/OT:script=cyrl;language=dflt;mapping=tex-te
+xt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Arial/BI/OT:script=cyrl;language=dflt;+smcp;mapping=
+tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Script 'Cyrillic' not explicitly supported within font
+(fontspec)             'Courier New'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CourierNew(0)' created for font 'Courier
+(fontspec)             New' with options
+(fontspec)             [Ligatures=TeX,WordSpace={1,0,0},HyphenChar=None,Punctua
+tionSpace=WordSpace,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Courier
+(fontspec)             New/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Courier
+(fontspec)             New/B/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Courier
+(fontspec)             New/I/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Courier
+(fontspec)             New/BI/OT:script=cyrl;language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(1)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Ligatures=TeX,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=cyrl;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=cyrl;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=cyrl;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=cyrl;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=cyrl;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+Package fontspec Info: 
+(fontspec)             Script 'Cyrillic' not explicitly supported within font
+(fontspec)             'Courier New'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CourierNew(1)' created for font 'Courier
+(fontspec)             New' with options [Ligatures=TeX,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Courier
+(fontspec)             New/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Courier
+(fontspec)             New/B/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Courier
+(fontspec)             New/I/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Courier
+(fontspec)             New/BI/OT:script=cyrl;language=dflt;mapping=tex-text;"
+
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks18
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box53
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks22
+))
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count299
+\c@pgf@countb=\count300
+\c@pgf@countc=\count301
+\c@pgf@countd=\count302
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+\pgf@sys@id@count=\count303
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-xetex.def
+File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count304
+)))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count305
+\pgfsyssoftpath@bigbuffer@items=\count306
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count307
+\pgfmath@box=\box54
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count308
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count309
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen194
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen198
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count310
+\pgf@shadingcount=\count311
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box58
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box59
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count312
+\pgfplotmarksize=\dimen260
+)
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
+\tikz@figbox=\box60
+\tikz@figbox@bg=\box61
+\tikz@tempbox=\box62
+\tikz@tempbox@bg=\box63
+\tikztreelevel=\count313
+\tikznumberofchildren=\count314
+\tikznumberofcurrentchild=\count315
+\tikz@fig@count=\count316
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count317
+\pgfmatrixcurrentcolumn=\count318
+\pgf@matrix@numberofcolumns=\count319
+)
+\tikz@expandcount=\count320
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box64
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen269
+\ttl@minus=\dimen270
+\ttl@toksa=\toks31
+\titlewidth=\dimen271
+\titlewidthlast=\dimen272
+\titlewidthfirst=\dimen273
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip53
+\f@nch@offset@elh=\skip54
+\f@nch@offset@erh=\skip55
+\f@nch@offset@olh=\skip56
+\f@nch@offset@orh=\skip57
+\f@nch@offset@elf=\skip58
+\f@nch@offset@erf=\skip59
+\f@nch@offset@olf=\skip60
+\f@nch@offset@orf=\skip61
+\f@nch@height=\skip62
+\f@nch@footalignment=\skip63
+\f@nch@widthL=\skip64
+\f@nch@widthC=\skip65
+\f@nch@widthR=\skip66
+\@temptokenb=\toks32
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip67
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks33
+\ex@=\dimen274
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen275
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count321
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count322
+\leftroot@=\count323
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count324
+\DOTSCASE@=\count325
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box65
+\strutbox@=\box66
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen276
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count326
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count327
+\dotsspace@=\muskip17
+\c@parentequation=\count328
+\dspbrk@lvl=\count329
+\tag@help=\toks34
+\row@=\count330
+\column@=\count331
+\maxfields@=\count332
+\andhelp@=\toks35
+\eqnshift@=\dimen277
+\alignsep@=\dimen278
+\tagshift@=\dimen279
+\tagwidth@=\dimen280
+\totwidth@=\dimen281
+\lineht@=\dimen282
+\@envbody=\toks36
+\multlinegap=\skip68
+\multlinetaggap=\skip69
+\mathdisplay@stack=\toks37
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.s
+ty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen283
+\captionmargin=\dimen284
+\caption@leftmargin=\dimen285
+\caption@rightmargin=\dimen286
+\caption@width=\dimen287
+\caption@indent=\dimen288
+\caption@parindent=\dimen289
+\caption@hangindent=\dimen290
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count333
+\c@continuedfloat=\count334
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count335
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count336
+) (C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count337
+\multirow@dima=\skip71
+\bigstrutjot=\dimen291
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
+)
+\XKV@depth=\count338
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box67
+)
+\tc@llx=\dimen292
+\tc@lly=\dimen293
+\tc@urx=\dimen294
+\tc@ury=\dimen295
+Package trimclip Info: Using driver 'tc-xetex.def'.
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen296
+\adjbox@Height=\dimen297
+\adjbox@Depth=\dimen298
+\adjbox@Totalheight=\dimen299
+\adjbox@pwidth=\dimen300
+\adjbox@pheight=\dimen301
+\adjbox@pdepth=\dimen302
+\adjbox@ptotalheight=\dimen303
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count339
+) (C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box68
+\sift@deathcycles=\count340
+\@vwid@loff=\dimen304
+\@vwid@roff=\dimen305
+)
+==> First Aid for varwidth.sty applied!
+) (C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count341
+\float@exts=\toks40
+\float@box=\box69
+\@float@everytoks=\toks41
+\@floatcapt=\box70
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count342
+\lst@gtempboxa=\box71
+\lst@token=\toks42
+\lst@length=\count343
+\lst@currlwidth=\dimen306
+\lst@column=\count344
+\lst@pos=\count345
+\lst@lostspace=\dimen307
+\lst@width=\dimen308
+\lst@newlines=\count346
+\lst@lineno=\count347
+\lst@maxwidth=\dimen309
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count348
+\lst@skipnumbers=\count349
+\lst@framebox=\box72
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip72
+\cftbeforetoctitleskip=\skip73
+\cftaftertoctitleskip=\skip74
+\cftbeforepartskip=\skip75
+\cftpartnumwidth=\skip76
+\cftpartindent=\skip77
+\cftbeforechapskip=\skip78
+\cftchapindent=\skip79
+\cftchapnumwidth=\skip80
+\cftbeforesecskip=\skip81
+\cftsecindent=\skip82
+\cftsecnumwidth=\skip83
+\cftbeforesubsecskip=\skip84
+\cftsubsecindent=\skip85
+\cftsubsecnumwidth=\skip86
+\cftbeforesubsubsecskip=\skip87
+\cftsubsubsecindent=\skip88
+\cftsubsubsecnumwidth=\skip89
+\cftbeforeparaskip=\skip90
+\cftparaindent=\skip91
+\cftparanumwidth=\skip92
+\cftbeforesubparaskip=\skip93
+\cftsubparaindent=\skip94
+\cftsubparanumwidth=\skip95
+\cftbeforeloftitleskip=\skip96
+\cftafterloftitleskip=\skip97
+\cftbeforefigskip=\skip98
+\cftfigindent=\skip99
+\cftfignumwidth=\skip100
+\c@lofdepth=\count350
+\c@lotdepth=\count351
+\cftbeforelottitleskip=\skip101
+\cftafterlottitleskip=\skip102
+\cftbeforetabskip=\skip103
+\cfttabindent=\skip104
+\cfttabnumwidth=\skip105
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip106
+\RaggedLeftLeftskip=\skip107
+\RaggedRightLeftskip=\skip108
+\CenteringRightskip=\skip109
+\RaggedLeftRightskip=\skip110
+\RaggedRightRightskip=\skip111
+\CenteringParfillskip=\skip112
+\RaggedLeftParfillskip=\skip113
+\RaggedRightParfillskip=\skip114
+\JustifyingParfillskip=\skip115
+\CenteringParindent=\skip116
+\RaggedLeftParindent=\skip117
+\RaggedRightParindent=\skip118
+\JustifyingParindent=\skip119
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip120
+\LTright=\skip121
+\LTpre=\skip122
+\LTpost=\skip123
+\LTchunksize=\count352
+\LTcapwidth=\dimen310
+\LT@head=\box73
+\LT@firsthead=\box74
+\LT@foot=\box75
+\LT@lastfoot=\box76
+\LT@gbox=\box77
+\LT@cols=\count353
+\LT@rows=\count354
+\c@LT@tables=\count355
+\c@LT@chunks=\count356
+\LT@p@ftn=\toks43
+)
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count357
+\rotFPtop=\skip124
+\rotFPbot=\skip125
+\rot@float@box=\box78
+\rot@mess@toks=\toks44
+)
+(main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 252.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 252.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 252.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 252.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 252.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 252.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 252.
+LaTeX Font Info:    Redeclaring math accent \check on input line 252.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 252.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 252.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 252.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 252.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 252.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
+52.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 252.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+252.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 252.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 252.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+252.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 252.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 252
+.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 252.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 252.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 252.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 252
+.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 469.47049pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=469.47049pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-54.36449pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=28.45274pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count358
+File: Logo1.png Graphic file (type bmp)
+<Logo1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]\TU/TimesNewRoman(1)/m/n/14.4 студент 4 курса естественно-научного
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+\TU/TimesNewRoman(1)/m/n/14.4 факультета направления подготовки
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+\TU/TimesNewRoman(1)/m/n/14.4 01.03.02 Прикладная математика и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+[]\TU/TimesNewRoman(1)/m/n/14.4 доктор физико-математических наук,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+\TU/TimesNewRoman(1)/m/n/14.4 профессор кафедры вычислительной
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 314
+.
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 314
+.
+
+(C:\Users\Damir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+
+] (main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [2
+
+] [3
+
+]
+Overfull \hbox (5.04472pt too wide) in paragraph at lines 378--382
+[]\TU/TimesNewRoman(1)/m/n/14.4 При постоянном коэффиценте весь профиль движетс
+я равномерно. Каж-
+ []
+
+[4] [5] [6]
+Overfull \hbox (3.03828pt too wide) in paragraph at lines 430--431
+[]\TU/TimesNewRoman(1)/m/n/14.4 Интерполяционно-характеристический метод [[], [
+]] занимает особое ме-
+ []
+
+[7]
+Overfull \hbox (0.94188pt too wide) in paragraph at lines 456--457
+[]\TU/TimesNewRoman(1)/m/it/14.4 В работе рассматриваются точность, устойчивост
+ь, диссипативные
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+[8] [9]
+Глава 1.
+
+Overfull \hbox (3.03702pt too wide) in paragraph at lines 462--463
+\TU/TimesNewRoman(1)/m/n/14.4 эффициента переноса $\OML/cmm/m/it/14.4 a\OT1/cmr
+/m/n/14.4 (\OML/cmm/m/it/14.4 x; t\OT1/cmr/m/n/14.4 )$ \TU/TimesNewRoman(1)/m/n
+/14.4 аналитическое решение сществует. Это дает уни-
+ []
+
+[10
+
+]
+Overfull \hbox (1.45924pt too wide) in paragraph at lines 480--481
+\TU/TimesNewRoman(1)/m/n/14.4 линии [[], []]: сначала находят траектории, затем
+ используется начальные усло-
+ []
+
+
+Overfull \hbox (15.16063pt too wide) in paragraph at lines 484--485
+\TU/TimesNewRoman(1)/m/n/14.4 ческие линии представляют собой прямые линии в пр
+остранственно-временной
+ []
+
+File: a_const_countur.jpg Graphic file (type bmp)
+<a_const_countur.jpg>
+File: a_const_3d.jpg Graphic file (type bmp)
+<a_const_3d.jpg>
+[11] [12]
+File: a_x_countur.jpg Graphic file (type bmp)
+<a_x_countur.jpg>
+File: a_x_3d.jpg Graphic file (type bmp)
+<a_x_3d.jpg>
+ [13]
+File: a_t_countur.jpg Graphic file (type bmp)
+<a_t_countur.jpg>
+File: a_t_3d.jpg Graphic file (type bmp)
+<a_t_3d.jpg>
+ [14] [15]
+File: a_x_t_countur.jpg Graphic file (type bmp)
+<a_x_t_countur.jpg>
+File: a_x_t_3d.jpg Graphic file (type bmp)
+<a_x_t_3d.jpg>
+ [16] [17]
+Глава 2.
+
+Overfull \hbox (0.53635pt too wide) in paragraph at lines 662--663
+[]\TU/TimesNewRoman(1)/m/n/14.4 В параграфе будут использоваться несколько разл
+ичных явных разност-
+ []
+
+[18
+
+] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 762--764
+
+ []
+
+[20] [21] [22]
+File: image_2026-01-22_22-56-17.png Graphic file (type bmp)
+<image_2026-01-22_22-56-17.png>
+ [23] [24]
+File: a_const_t_0.pdf Graphic file (type pdf)
+<use a_const_t_0.pdf>
+File: a_const_1.pdf Graphic file (type pdf)
+<use a_const_1.pdf>
+File: a_const_t_2_5.pdf Graphic file (type pdf)
+<use a_const_t_2_5.pdf>
+File: a_const_t_5.pdf Graphic file (type pdf)
+<use a_const_t_5.pdf>
+File: a_const_7_50.pdf Graphic file (type pdf)
+<use a_const_7_50.pdf>
+
+Overfull \hbox (7.19833pt too wide) in paragraph at lines 919--920
+ [][] 
+ []
+
+File: a_const_10.pdf Graphic file (type pdf)
+<use a_const_10.pdf>
+
+Overfull \hbox (6.17113pt too wide) in paragraph at lines 925--926
+ [][] 
+ []
+
+
+Overfull \hbox (11.30989pt too wide) in paragraph at lines 944--946
+\TU/TimesNewRoman(1)/m/n/14.4 учитывает квадратичное отклонение и более чувстви
+тельна к локальным ошиб-
+ []
+
+[25] [26] [27]
+File: a_const_log_err_l1.pdf Graphic file (type pdf)
+<use a_const_log_err_l1.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1016--1017
+ [][] 
+ []
+
+File: a_const_bar_err_l1.pdf Graphic file (type pdf)
+<use a_const_bar_err_l1.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1022--1023
+ [][] 
+ []
+
+File: a_const_log_err_l2.pdf Graphic file (type pdf)
+<use a_const_log_err_l2.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1031--1032
+ [][] 
+ []
+
+File: a_const_bar_err_l2.pdf Graphic file (type pdf)
+<use a_const_bar_err_l2.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1037--1038
+ [][] 
+ []
+
+File: a_const_log_err_linf.pdf Graphic file (type pdf)
+<use a_const_log_err_linf.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1046--1047
+ [][] 
+ []
+
+File: a_const_bar_err_linf.pdf Graphic file (type pdf)
+<use a_const_bar_err_linf.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1052--1053
+ [][] 
+ []
+
+[28]
+Overfull \hbox (5.87123pt too wide) in paragraph at lines 1082--1084
+\TU/TimesNewRoman(1)/m/n/14.4 ляясь методами для решения законов сохранения, пр
+именимы только для урав-
+ []
+
+[29]
+File: a_x_t_2_5.pdf Graphic file (type pdf)
+<use a_x_t_2_5.pdf>
+File: a_x_t_5.pdf Graphic file (type pdf)
+<use a_x_t_5.pdf>
+File: a_x_t_9.pdf Graphic file (type pdf)
+<use a_x_t_9.pdf>
+
+Overfull \hbox (7.19833pt too wide) in paragraph at lines 1109--1110
+ [][] 
+ []
+
+File: a_x_t_13.pdf Graphic file (type pdf)
+<use a_x_t_13.pdf>
+
+Overfull \hbox (7.19833pt too wide) in paragraph at lines 1115--1116
+ [][] 
+ []
+
+File: a_x_t_16.pdf Graphic file (type pdf)
+<use a_x_t_16.pdf>
+
+Overfull \hbox (7.19833pt too wide) in paragraph at lines 1124--1125
+ [][] 
+ []
+
+File: a_x_t_20.pdf Graphic file (type pdf)
+<use a_x_t_20.pdf>
+
+Overfull \hbox (7.19833pt too wide) in paragraph at lines 1130--1131
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
+
+ []
+
+[30]
+File: a_t_log_err_l1.pdf Graphic file (type pdf)
+<use a_t_log_err_l1.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1192--1193
+ [][] 
+ []
+
+File: a_t_bar_err_l1.pdf Graphic file (type pdf)
+<use a_t_bar_err_l1.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1198--1199
+ [][] 
+ []
+
+File: a_t_log_err_l2.pdf Graphic file (type pdf)
+<use a_t_log_err_l2.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1207--1208
+ [][] 
+ []
+
+File: a_t_bar_err_l2.pdf Graphic file (type pdf)
+<use a_t_bar_err_l2.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1213--1214
+ [][] 
+ []
+
+File: a_t_log_err_linf.pdf Graphic file (type pdf)
+<use a_t_log_err_linf.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1222--1223
+ [][] 
+ []
+
+File: a_t_bar_err_linf.pdf Graphic file (type pdf)
+<use a_t_bar_err_linf.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1228--1229
+ [][] 
+ []
+
+[31] [32]
+File: a_t_t_0_05.pdf Graphic file (type pdf)
+<use a_t_t_0_05.pdf>
+File: a_t_t_0_50.pdf Graphic file (type pdf)
+<use a_t_t_0_50.pdf>
+File: a_t_t_3_60.pdf Graphic file (type pdf)
+<use a_t_t_3_60.pdf>
+File: a_t_t_10_70.pdf Graphic file (type pdf)
+<use a_t_t_10_70.pdf>
+File: a_t_t_17.pdf Graphic file (type pdf)
+<use a_t_t_17.pdf>
+File: a_t_t_25.pdf Graphic file (type pdf)
+<use a_t_t_25.pdf>
+ [33]
+Overfull \hbox (0.59737pt too wide) in paragraph at lines 1309--1310
+[]\TU/TimesNewRoman(1)/m/n/14.4 В случае скорости переноса, переодически меняющ
+ей знак, импульс ре-
+ []
+
+[34] [35]
+File: a_at_log_err_l1.pdf Graphic file (type pdf)
+<use a_at_log_err_l1.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1399--1400
+ [][] 
+ []
+
+File: a_at_bar_err_l1.pdf Graphic file (type pdf)
+<use a_at_bar_err_l1.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1405--1406
+ [][] 
+ []
+
+File: a_at_log_err_l2.pdf Graphic file (type pdf)
+<use a_at_log_err_l2.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1414--1415
+ [][] 
+ []
+
+File: a_at_bar_err_l2.pdf Graphic file (type pdf)
+<use a_at_bar_err_l2.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1420--1421
+ [][] 
+ []
+
+File: a_at_log_err_linf.pdf Graphic file (type pdf)
+<use a_at_log_err_linf.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1435--1436
+ [][] 
+ []
+
+File: a_at_bar_err_linf.pdf Graphic file (type pdf)
+<use a_at_bar_err_linf.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1441--1442
+ [][] 
+ []
+
+[36] [37] [38]
+File: a_x_t_t_0_50.pdf Graphic file (type pdf)
+<use a_x_t_t_0_50.pdf>
+File: a_x_t_t_0_7.pdf Graphic file (type pdf)
+<use a_x_t_t_0_7.pdf>
+File: a_x_t_t_1_50.pdf Graphic file (type pdf)
+<use a_x_t_t_1_50.pdf>
+File: a_x_t_t_2_6.pdf Graphic file (type pdf)
+<use a_x_t_t_2_6.pdf>
+File: a_x_t_t_6_0.pdf Graphic file (type pdf)
+<use a_x_t_t_6_0.pdf>
+File: a_x_t_t_10.pdf Graphic file (type pdf)
+<use a_x_t_t_10.pdf>
+ [39] [40]
+Overfull \hbox (11.37201pt too wide) in paragraph at lines 1643--1644
+\TU/TimesNewRoman(1)/m/n/14.4 Ведроффа (ЛВ), Мак-Кормака, TVD, MUSCL, Годунова 
+сохраняют некую
+ []
+
+
+Overfull \hbox (2.26884pt too wide) in paragraph at lines 1643--1644
+\TU/TimesNewRoman(1)/m/n/14.4 всем пространственно-временном интервале, показыв
+ая более высокую
+ []
+
+File: a_x_t_log_err_l1.pdf Graphic file (type pdf)
+<use a_x_t_log_err_l1.pdf>
+File: a_x_t_bar_err_l1.pdf Graphic file (type pdf)
+<use a_x_t_bar_err_l1.pdf>
+
+Overfull \hbox (9.14133pt too wide) in paragraph at lines 1658--1659
+ [][] 
+ []
+
+File: a_x_t_log_err_l2.pdf Graphic file (type pdf)
+<use a_x_t_log_err_l2.pdf>
+File: a_x_t_bar_err_l2.pdf Graphic file (type pdf)
+<use a_x_t_bar_err_l2.pdf>
+
+Overfull \hbox (8.48952pt too wide) in paragraph at lines 1673--1674
+ [][] 
+ []
+
+File: a_x_t_log_err_linf.pdf Graphic file (type pdf)
+<use a_x_t_log_err_linf.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 1682--1683
+ [][] 
+ []
+
+File: a_x_t_bar_err_linf.pdf Graphic file (type pdf)
+<use a_x_t_bar_err_linf.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 1688--1689
+ [][] 
+ []
+
+[41] [42]
+Overfull \hbox (0.1344pt too wide) in paragraph at lines 1713--1714
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для врмененно-зависящего коэффициента переноса 
+и выбранной функ-
+ []
+
+[43]
+Overfull \hbox (5.05861pt too wide) in paragraph at lines 1717--1718
+[]\TU/TimesNewRoman(1)/m/n/14.4 Случай нестационарной скорости показывает как в
+лияет изменение про-
+ []
+
+
+Overfull \hbox (9.34232pt too wide) in paragraph at lines 1717--1718
+\TU/TimesNewRoman(1)/m/n/14.4 мы второго порядка показывают более лучшую аппрок
+симацию, нежели низко-
+ []
+
+[44]
+Overfull \hbox (4.49612pt too wide) in paragraph at lines 1729--1730
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для описания неявных схем используются обозначе
+ния разностных опе-
+ []
+
+[45]
+Overfull \hbox (0.11565pt too wide) in paragraph at lines 1741--1742
+[]\TU/TimesNewRoman(1)/m/n/14.4 Благодаря М-матрице для неявных схем выполняютс
+я следующие свой-
+ []
+
+[46] [47] [48]
+Overfull \hbox (8.00874pt too wide) in paragraph at lines 1873--1874
+\TU/TimesNewRoman(1)/m/n/14.4 никают при неустойчивых численных схемах, что осо
+бенно полезно при неста-
+ []
+
+[49] [50]
+Overfull \hbox (36.3135pt too wide) detected at line 1950
+\OML/cmm/m/it/14.4 u[] \OT1/cmr/m/n/14.4 = []
+ []
+
+File: image_2026-01-28_19-58-12.png Graphic file (type bmp)
+<image_2026-01-28_19-58-12.png>
+[51]
+File: a_const_nejavn_t_20.pdf Graphic file (type pdf)
+<use a_const_nejavn_t_20.pdf>
+File: a_const_nejavn_t_50.pdf Graphic file (type pdf)
+<use a_const_nejavn_t_50.pdf>
+File: a_const_nejavn_t_100.pdf Graphic file (type pdf)
+<use a_const_nejavn_t_100.pdf>
+File: a_const_nejavn_t_150.pdf Graphic file (type pdf)
+<use a_const_nejavn_t_150.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2016--2017
+ [][] 
+ []
+
+File: a_const_nejavn_t_200.pdf Graphic file (type pdf)
+<use a_const_nejavn_t_200.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2026--2027
+ [][] 
+ []
+
+File: a_const_nejavn_t_250.pdf Graphic file (type pdf)
+<use a_const_nejavn_t_250.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2033--2034
+ [][] 
+ []
+
+[52] [53] [54]
+Overfull \hbox (4.93123pt too wide) in paragraph at lines 2101--2102
+[]\TU/TimesNewRoman(1)/m/n/14.4 Норма $\OML/cmm/m/it/14.4 L[]$ \TU/TimesNewRoma
+n(1)/m/n/14.4 определяет максимальную локальную ошибку, остается прак-
+ []
+
+[55]
+File: a_const_t_log_err_l1_nej.pdf Graphic file (type pdf)
+<use a_const_t_log_err_l1_nej.pdf>
+File: a_const_t_bar_err_l1_nej.pdf Graphic file (type pdf)
+<use a_const_t_bar_err_l1_nej.pdf>
+
+Overfull \hbox (9.14133pt too wide) in paragraph at lines 2115--2116
+ [][] 
+ []
+
+File: a_const_t_log_err_l2_nej.pdf Graphic file (type pdf)
+<use a_const_t_log_err_l2_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2124--2125
+ [][] 
+ []
+
+File: a_const_t_bar_err_l2_nej.pdf Graphic file (type pdf)
+<use a_const_t_bar_err_l2_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2130--2131
+ [][] 
+ []
+
+File: a_const_t_log_err_linf_nej.pdf Graphic file (type pdf)
+<use a_const_t_log_err_linf_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2139--2140
+ [][] 
+ []
+
+File: a_const_t_bar_err_linf_nej.pdf Graphic file (type pdf)
+<use a_const_t_bar_err_linf_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2145--2146
+ [][] 
+ []
+
+[56]
+File: a_x_nejavn_t_10.pdf Graphic file (type pdf)
+<use a_x_nejavn_t_10.pdf>
+File: a_x_nejavn_t_20.pdf Graphic file (type pdf)
+<use a_x_nejavn_t_20.pdf>
+File: a_x_nejavn_t_100.pdf Graphic file (type pdf)
+<use a_x_nejavn_t_100.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2191--2192
+ [][] 
+ []
+
+File: a_x_nejavn_t_150.pdf Graphic file (type pdf)
+<use a_x_nejavn_t_150.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2197--2198
+ [][] 
+ []
+
+File: a_x_nejavn_t_200.pdf Graphic file (type pdf)
+<use a_x_nejavn_t_200.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2206--2207
+ [][] 
+ []
+
+File: a_x_nejavn_t_250.pdf Graphic file (type pdf)
+<use a_x_nejavn_t_250.pdf>
+
+Overfull \hbox (4.13159pt too wide) in paragraph at lines 2212--2213
+ [][] 
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 2220--2221
+
+ []
+
+[58]
+File: a_x_log_err_l1_nej.pdf Graphic file (type pdf)
+<use a_x_log_err_l1_nej.pdf>
+File: a_x_bar_err_l1_nej.pdf Graphic file (type pdf)
+<use a_x_bar_err_l1_nej.pdf>
+
+Overfull \hbox (9.14133pt too wide) in paragraph at lines 2285--2286
+ [][] 
+ []
+
+File: a_x_log_err_l2_nej.pdf Graphic file (type pdf)
+<use a_x_log_err_l2_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2294--2295
+ [][] 
+ []
+
+File: a_x_bar_err_l2_nej.pdf Graphic file (type pdf)
+<use a_x_bar_err_l2_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2300--2301
+ [][] 
+ []
+
+File: a_x_log_err_linf_nej.pdf Graphic file (type pdf)
+<use a_x_log_err_linf_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2309--2310
+ [][] 
+ []
+
+File: a_x_bar_err_linf_nej.pdf Graphic file (type pdf)
+<use a_x_bar_err_linf_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2315--2316
+ [][] 
+ []
+
+[59] [60]
+Overfull \hbox (8.28015pt too wide) in paragraph at lines 2335--2336
+[]\TU/TimesNewRoman(1)/m/n/14.4 Параметры выбраны таким образом, чтобы показать
+ преимущества неяв-
+ []
+
+File: a_t_nejavn_t_0_50.pdf Graphic file (type pdf)
+<use a_t_nejavn_t_0_50.pdf>
+File: a_t_nejavn_t_0_95.pdf Graphic file (type pdf)
+<use a_t_nejavn_t_0_95.pdf>
+File: a_t_nejavn_t_5.pdf Graphic file (type pdf)
+<use a_t_nejavn_t_5.pdf>
+File: a_t_nejavn_t_25.pdf Graphic file (type pdf)
+<use a_t_nejavn_t_25.pdf>
+File: a_t_nejavn_t_40.pdf Graphic file (type pdf)
+<use a_t_nejavn_t_40.pdf>
+File: a_t_nejavn_t_49.pdf Graphic file (type pdf)
+<use a_t_nejavn_t_49.pdf>
+[61] [62]
+File: a_t_log_err_l1_nej.pdf Graphic file (type pdf)
+<use a_t_log_err_l1_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2451--2452
+ [][] 
+ []
+
+File: a_t_bar_err_l1_nej.pdf Graphic file (type pdf)
+<use a_t_bar_err_l1_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2457--2458
+ [][] 
+ []
+
+File: a_t_log_err_l2_nej.pdf Graphic file (type pdf)
+<use a_t_log_err_l2_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2466--2467
+ [][] 
+ []
+
+File: a_t_bar_err_l2_nej.pdf Graphic file (type pdf)
+<use a_t_bar_err_l2_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2472--2473
+ [][] 
+ []
+
+File: a_t_log_err_linf_nej.pdf Graphic file (type pdf)
+<use a_t_log_err_linf_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2481--2482
+ [][] 
+ []
+
+File: a_t_bar_err_linf_nej.pdf Graphic file (type pdf)
+<use a_t_bar_err_linf_nej.pdf>
+
+Overfull \hbox (10.46881pt too wide) in paragraph at lines 2487--2488
+ [][] 
+ []
+
+[63] [64]
+File: a_x_t_nejavn_t_1.pdf Graphic file (type pdf)
+<use a_x_t_nejavn_t_1.pdf>
+File: a_x_t_nejavn_t_2_25.pdf Graphic file (type pdf)
+<use a_x_t_nejavn_t_2_25.pdf>
+File: a_x_t_nejavn_t_3.pdf Graphic file (type pdf)
+<use a_x_t_nejavn_t_3.pdf>
+File: a_x_t_nejavn_t_10.pdf Graphic file (type pdf)
+<use a_x_t_nejavn_t_10.pdf>
+File: a_x_t_nejavn_t_22.pdf Graphic file (type pdf)
+<use a_x_t_nejavn_t_22.pdf>
+File: a_x_t_nejavn_t_24.pdf Graphic file (type pdf)
+<use a_x_t_nejavn_t_24.pdf>
+ [65] [66]
+File: a_x_t_log_err_l1_nej.pdf Graphic file (type pdf)
+<use a_x_t_log_err_l1_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2619--2620
+ [][] 
+ []
+
+File: a_x_t_bar_err_l1_nej.pdf Graphic file (type pdf)
+<use a_x_t_bar_err_l1_nej.pdf>
+
+Overfull \hbox (9.14133pt too wide) in paragraph at lines 2625--2626
+ [][] 
+ []
+
+File: a_x_t_log_err_l2_nej.pdf Graphic file (type pdf)
+<use a_x_t_log_err_l2_nej.pdf>
+
+Overfull \hbox (0.90617pt too wide) in paragraph at lines 2634--2635
+ [][] 
+ []
+
+File: a_x_t_bar_err_l2_nej.pdf Graphic file (type pdf)
+<use a_x_t_bar_err_l2_nej.pdf>
+
+Overfull \hbox (9.14133pt too wide) in paragraph at lines 2640--2641
+ [][] 
+ []
+
+File: a_x_t_log_err_linf_nej.pdf Graphic file (type pdf)
+<use a_x_t_log_err_linf_nej.pdf>
+
+Overfull \hbox (1.51825pt too wide) in paragraph at lines 2649--2650
+ [][] 
+ []
+
+File: a_x_t_bar_err_linf_nej.pdf Graphic file (type pdf)
+<use a_x_t_bar_err_linf_nej.pdf>
+
+Overfull \hbox (9.14133pt too wide) in paragraph at lines 2655--2656
+ [][] 
+ []
+
+[67] [68]
+Overfull \hbox (2.83093pt too wide) in paragraph at lines 2668--2673
+[]\TU/TimesNewRoman(1)/m/n/14.4 Следует отметить, что центральная схема существ
+енно уступает осталь-
+ []
+
+[69] [70] [71
+
+] [72] [73]
+Underfull \hbox (badness 10000) in paragraph at lines 2788--2793
+[][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][][
+][][][][][][][][][] [] [][][]$
+ []
+
+[74
+
+] [75] [76
+
+] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
+ ***********
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 2727 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 23645 strings out of 402987
+ 502347 string characters out of 5448524
+ 1084866 words of memory out of 5000000
+ 51854 multiletter control sequences out of 15000+600000
+ 635309 words of font info for 112 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 102i,12n,107p,1336b,1747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (86 pages).
